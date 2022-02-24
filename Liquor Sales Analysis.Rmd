@@ -1,0 +1,35 @@
+---
+title: "Iowa Liquor Sales"
+author: "Sahil Kumar, Nishchay Garala, Vineeth Vardhan Bevara, Jillian Moorman"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+editor_options:
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE, cache = F}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(error = TRUE)
+```
+
+#Reading the Data set 
+```{r, echo=FALSE, include=FALSE, cache = F} 
+library(tidyverse)
+
+#df<-read_csv("Iowa_Liquor_Sales.csv")
+
+#iowa_alcohol<-df %>%sample_n(500000)
+
+#write_csv(iowa_alcohol, file= "iowa_alcohol.csv")#this code was used to generate the random sample that we will use to run our analysis on. 
+
+View(iowa_alcohol)
+ sales <- read_csv("iowa_alcohol.csv")
+ 
+ View(sales)
+```
+
+
+
