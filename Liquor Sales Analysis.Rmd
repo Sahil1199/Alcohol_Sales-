@@ -1,11 +1,10 @@
 ---
-title: "Iowa Liquor Sales"
+title: 'Iowa Liquor Sales'
 author: "Sahil Kumar, Nishchay Garala, Vineeth Vardhan Bevara, Jillian Moorman"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
-  word_document: default
-  pdf_document: default
   html_document: default
+  pdf_document: default
 editor_options:
   chunk_output_type: console
 ---
@@ -15,8 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_chunk$set(error = TRUE)
 ```
 
-#Reading the Data set 
-```{r, echo=FALSE, include=FALSE, cache = F} 
+```{r}
 library(tidyverse)
 
 #df<-read_csv("Iowa_Liquor_Sales.csv")
@@ -29,6 +27,8 @@ View(iowa_alcohol)
  sales <- read_csv("iowa_alcohol.csv")
  
  View(sales)
+ 
+ print(iowa_alcohol)
 ```
 
 
